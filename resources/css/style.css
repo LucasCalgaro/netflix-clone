@@ -1,0 +1,182 @@
+:root {
+  --vermelho: #ff1d1d;
+  --black: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--black);
+  padding: 5px 60px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 7.5px;
+  font-size: 13px;
+  transition: all 0.5s;
+}
+
+header nav a:hover {
+  color: #aaa;
+}
+
+.filme-principal {
+  font-size: 16px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(20, 20, 20, 0.35) 0,
+      rgba(20, 20, 20, 0.58) 70%,
+      #141414 100%
+    ),
+    url(../img/house-of-cards-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 60px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 40px;
+  max-width: 500px;
+  font-size: 28px;
+  text-shadow: rgba(0, 0, 0, 0.6) 2px 2px 4px;
+}
+.titulo img {
+  max-width: 600px;
+}
+
+.btn {
+  font-weight: bold;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.btn i {
+  margin-right: 5px;
+}
+.btn1 {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
+}
+.btn1:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.btn2 {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.btn2:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.box-imagem {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+.carrousel-filmes {
+  margin-top: -100px;
+}
+.section-title {
+  margin: 20px 0 20px 60px;
+  font-size: 32px;
+}
+@media screen and (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  .filme-principal {
+    height: 80vh;
+  }
+  .titulo img {
+    max-width: 400px;
+  }
+
+  .filme-principal .descricao {
+    font-size: 18px;
+  }
+  .carrousel-filmes {
+    margin-top: -40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .filme-principal {
+    height: 90vh;
+    padding: 0 40px;
+  }
+  .titulo img {
+    max-width: 280px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 12px 30px;
+  }
+  .filme-principal .descricao {
+    font-size: 16px;
+  }
+  .carrousel-filmes {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .filme-principal {
+    height: 90vh;
+    padding: 0 40px;
+  }
+  .titulo img {
+    max-width: 250px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 12px 30px;
+  }
+  .filme-principal .descricao {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+}

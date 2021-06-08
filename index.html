@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histflix - Plataforma de filmes históricos</title>
+    <!-- Owl Caroussel -->
+    
+    <link rel="stylesheet" href="resources/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="resources/css/owl.theme.default.min.css">
+    
+
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="https://kit.fontawesome.com/3b74de1e0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">HISTFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <div class="titulo">
+                    <img src="resources/img/house-of-cards-logo.png" alt="">
+                </div>
+                <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.</p>
+            </div>
+            <div class="botoes">
+                <button role="button" class="btn btn1">
+                    <i class="fas fa-play"></i> Assistir
+                </button>
+                <button role="button" class="btn btn2">
+                    <i class="fas fa-info-circle"></i> Mais informações
+                </button>
+            </div>
+        </div>
+        <div class="carrousel-filmes">
+            <h2 class="section-title">Novidades</h2>
+            <div class="filmes owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/lucifer-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/22-contra-a-terra-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/monster-pets-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/godzilla-vs-kong-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/mortal-kombat-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/sara-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/miraculous-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/falcon-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/sem-remorso-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/soul-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/wandavision-thumbnail.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-imagem" src="resources/img/raya-thumbnail.jpg">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="resources/js/jquery.min.js"></script>
+    <script src="resources/js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:8,
+            nav:false,
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:4
+                },
+                1000:{
+                    items:5
+                },
+                1900:{
+                    items:8
+                }
+            }
+        })
+    </script>
+</body>
+</html>
